@@ -1,0 +1,6 @@
+--Activity 3
+select salesman_id, salesman_city from salesman;
+
+select * from salesman where SALESMAN_CITY = 'Paris';
+
+select SALESMAN_ID,COMMISSION from salesman where salesman_name = 'Paul Adam';

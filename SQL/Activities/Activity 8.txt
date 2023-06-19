@@ -1,0 +1,7 @@
+-- Activity 8
+
+select * from orders;
+
+select CUSTOMER_ID, max(purchase_amount) Highest_amount from orders group by customer_id order by customer_id ;
+select SALESMAN_ID, order_date, max(purchase_amount) Highest_amount from orders where order_date = '17-AUG-12' group by SALESMAN_ID, order_date;
+select customer_id, order_date, max(purchase_amount) Highest_amount from orders group by customer_id, order_date having max(purchase_amount) in (2030,3450,5760,6000);

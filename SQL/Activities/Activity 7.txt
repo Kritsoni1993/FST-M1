@@ -1,0 +1,8 @@
+-- Activity 7
+select * from orders
+
+select sum(purchase_amount) as total_sum from orders;
+select round(avg(purchase_amount),0) avg_amount from orders;
+select max(purchase_amount) Maximum from orders;
+select min(purchase_amount) minimum from orders;
+select count(purchase_amount) count from orders;
